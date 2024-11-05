@@ -1,0 +1,359 @@
+/* General */
+:root {
+    --my-navy: #26355D;
+    --my-purple: #6550ec;
+    --my-orange: #f85a20;
+    --my-yellow: #FFC000;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    font-family: Arial, sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Hero Section */
+.hero {
+    background-image: url(./assets/background.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.overlay-image {
+    width: 450px; 
+    margin-bottom: 20px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block; /* Helps margin-top work correctly */
+    background-color: var(--my-orange);
+    color: white;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: var(--my-orange);
+    margin-top: 6rem; 
+}
+.cta-button:hover {
+    /* background-color: var(--my-yellow); */
+    background: linear-gradient(to right, var(--my-purple), var(--my-yellow)); 
+}
+
+.roomies{
+    background: linear-gradient(to right, var(--my-purple), var(--my-orange)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold; 
+}
+
+.animated-roomies {
+    background: linear-gradient(
+        90deg,
+        var(--my-purple),
+        var(--my-yellow),
+        var(--my-orange),
+        var(--my-purple),
+        var(--my-yellow)
+    ); 
+    background-size: 400% 100%; 
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShiftSeamless 4s linear infinite; 
+}
+
+@keyframes colorShiftSeamless {
+    0% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 100% 50%; 
+    }
+} 
+
+.swipe{
+    color: var(--my-yellow);
+    font-weight: bold; 
+}
+
+.tinder{
+    /* color: var(--my-yellow); */
+    font-weight: bold; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* What We Do Section */
+.what-we-do {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f7f9fb, #ffffff); 
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto; 
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mission-statement {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* How It Works Section */
+.how-it-works {
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    padding: 20px;
+    background: linear-gradient(to right, #f7f9fb, #ffffff); 
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Meet the Team Section */
+.meet-the-team {
+    padding: 50px;
+    color: #f7f9fb;
+    text-align: center;
+}
+
+.meet-the-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em; 
+}
+
+.team-member {
+    width: 35%;
+    background: linear-gradient(to right, #f7f9fb, #ffffff); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Scrolling Arrow */
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid var(--my-yellow);
+    border-right: 2px solid var(--my-yellow);
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down 4s ease-in-out infinite;
+    animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+.hidden{
+    opacity: 0;
+    border: 0px;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1; }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1; }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1; }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Coming Soon Section */
+.coming-soon {
+    background-color: #f7f7f7; 
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.coming-soon-content {
+    animation: bounceFade 2s ease-in-out infinite; 
+    font-size: 3rem; 
+    background: linear-gradient(90deg, var(--my-yellow), var(--my-purple), var(--my-orange)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.coming-soon h2 {
+    margin-bottom: 10px;
+}
+
+.coming-soon p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Bounce and Fade Animation with Color Change */
+@keyframes bounceFade {
+    0%, 100% {
+        /* transform: translateY(0);  */
+        opacity: 0.5; 
+    }
+    25% {
+        opacity: 0.75;
+    }
+    50% {
+        /* transform: translateY(-20px);  */
+        opacity: 1; 
+    }
+    75% {
+        opacity: 0.75; 
+    }
+}
+
+
+
+
+
+
