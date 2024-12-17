@@ -220,7 +220,8 @@ html, body {
 }
 
 .team-member {
-    width: 35%;
+    /* width: 35%; */
+    width: fit-content;
     background: linear-gradient(to right, #f7f9fb, #ffffff); 
     padding: 20px;
     border-radius: 10px;
