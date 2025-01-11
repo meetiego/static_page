@@ -273,7 +273,7 @@ footer {
 
 .footer-logo-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -283,6 +283,7 @@ footer {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
 .linkedin{
