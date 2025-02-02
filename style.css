@@ -26,7 +26,7 @@ html, body {
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Hero Section */
 .hero {
-    background-image: url(./assets/background.png);
+    background-image: url(./assets/rb_55204.png);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -81,7 +81,29 @@ html, body {
     background: linear-gradient(to right, var(--my-purple), var(--my-orange)); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    font-weight: bold; 
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.orange{
+    background: var(--my-orange);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: 800; 
+}
+
+.purple{
+    background: var(--my-purple);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: 800; 
+}
+
+.white{
+    background: white;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: 800; 
 }
 
 .animated-roomies {
@@ -249,47 +271,93 @@ html, body {
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Footer */
-footer {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: var(--my-navy);
+/* Footer Styles */
+.footer {
+    background-color: #26355D;
     color: white;
-    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 50%;
-}
-
-.footer-logo-container{
+/* Footer Container */
+.footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Sections in Footer */
+.footer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+/* Footer Logo */
+.footer-logo {
+    width: 12rem;
+    object-fit: contain;
+}
+
+/* Social Icons */
 .social-icons {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
-    height: 100px;
+    justify-content: center;
 }
 
-.linkedin{
-    width: 3rem;
-    height: 3rem;
-    /* background-color: var(--my-orange); */
+.social-icons img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Powered By Section */
+.footer-powered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-powered img {
+    width: 9rem;
+    height: 6rem;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media (min-width: 640px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons img {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
